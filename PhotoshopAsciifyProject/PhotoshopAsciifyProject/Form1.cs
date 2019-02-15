@@ -24,29 +24,6 @@ namespace PhotoshopAsciifyProject
             openFileDialog1.Filter = "jpg files (*.jpg)|*.jpg|All files (*.*)|*.*";
             openFileDialog1.Title = "Please pick your image";
             openFileDialog1.ShowDialog();
-
-            Bitmap colorPic = new Bitmap(openFileDialog1.FileName);
-            pictureBox1.Image = colorPic;
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            Bitmap BmpImage = new Bitmap(pictureBox1.Image);
-
-            for (int y = 0; y < BmpImage.Height; y += 1)
-            {
-                for (int x = 0; x < BmpImage.Width; x += 1)
-                {
-                    Color col_pixel = BmpImage.GetPixel(x, y);
-
-                    int gray_value = (int)(col_pixel.R * .21 + col_pixel.G * .72 + col_pixel.B * .07);
-
-                    Color gray_pixel = Color.FromArgb(gray_value, gray_value, gray_value);
-
-                    BmpImage.SetPixel(x, y, gray_pixel);
-                }
-            }
-            pictureBox3.Image = BmpImage;
-            pictureBox3.Height = (int)numericUpDown1.Value * 4;
-            pictureBox3.Width = (int)numericUpDown2.Value * 4;
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void ValueChange1(object sender, EventArgs e)
@@ -102,6 +79,33 @@ namespace PhotoshopAsciifyProject
             Asciify.six = textSix.Text;
             Bitmap Bitmp = new Bitmap(pictureBox1.Image);
             richTextBox1.Text = Asciify.Ascitize(Bitmp, (int)numericUpDown1.Value, (int)numericUpDown2.Value);
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+            Bitmap colorPic = new Bitmap(openFileDialog1.FileName);
+            pictureBox1.Image = colorPic;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            Bitmap BmpImage = new Bitmap(pictureBox1.Image);
+
+            for (int y = 0; y < BmpImage.Height; y += 1)
+            {
+                for (int x = 0; x < BmpImage.Width; x += 1)
+                {
+                    Color col_pixel = BmpImage.GetPixel(x, y);
+
+                    int gray_value = (int)(col_pixel.R * .21 + col_pixel.G * .72 + col_pixel.B * .07);
+
+                    Color gray_pixel = Color.FromArgb(gray_value, gray_value, gray_value);
+
+                    BmpImage.SetPixel(x, y, gray_pixel);
+                }
+            }
+            pictureBox3.Image = BmpImage;
+            pictureBox3.Height = (int)numericUpDown1.Value * 4;
+            pictureBox3.Width = (int)numericUpDown2.Value * 4;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

@@ -79,20 +79,20 @@
             this.fIleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem});
             this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
-            this.fIleToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
+            this.fIleToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
             this.fIleToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenPic);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(128, 137);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.TabIndex = 1;
@@ -101,7 +101,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(128, 452);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(256, 256);
             this.pictureBox3.TabIndex = 3;
@@ -111,7 +111,7 @@
             // 
             this.textOne.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textOne.Location = new System.Drawing.Point(240, 996);
-            this.textOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textOne.Margin = new System.Windows.Forms.Padding(4);
             this.textOne.Name = "textOne";
             this.textOne.Size = new System.Drawing.Size(100, 32);
             this.textOne.TabIndex = 6;
@@ -121,7 +121,7 @@
             // 
             this.textFour.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textFour.Location = new System.Drawing.Point(240, 1102);
-            this.textFour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textFour.Margin = new System.Windows.Forms.Padding(4);
             this.textFour.Name = "textFour";
             this.textFour.Size = new System.Drawing.Size(100, 32);
             this.textFour.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             this.textThree.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textThree.Location = new System.Drawing.Point(240, 1063);
-            this.textThree.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textThree.Margin = new System.Windows.Forms.Padding(4);
             this.textThree.Name = "textThree";
             this.textThree.Size = new System.Drawing.Size(100, 32);
             this.textThree.TabIndex = 8;
@@ -141,7 +141,7 @@
             // 
             this.textTwo.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTwo.Location = new System.Drawing.Point(240, 1033);
-            this.textTwo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textTwo.Margin = new System.Windows.Forms.Padding(4);
             this.textTwo.Name = "textTwo";
             this.textTwo.Size = new System.Drawing.Size(100, 32);
             this.textTwo.TabIndex = 9;
@@ -210,7 +210,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(504, 1083);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 81);
             this.button1.TabIndex = 16;
@@ -222,7 +222,7 @@
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(840, 63);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1020, 1169);
             this.richTextBox1.TabIndex = 17;
@@ -231,12 +231,13 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // textFive
             // 
             this.textFive.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textFive.Location = new System.Drawing.Point(240, 1135);
-            this.textFive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textFive.Margin = new System.Windows.Forms.Padding(4);
             this.textFive.Name = "textFive";
             this.textFive.Size = new System.Drawing.Size(100, 32);
             this.textFive.TabIndex = 18;
@@ -246,7 +247,7 @@
             // 
             this.textSix.Font = new System.Drawing.Font("Consolas", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSix.Location = new System.Drawing.Point(240, 1171);
-            this.textSix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textSix.Margin = new System.Windows.Forms.Padding(4);
             this.textSix.Name = "textSix";
             this.textSix.Size = new System.Drawing.Size(100, 32);
             this.textSix.TabIndex = 19;
@@ -284,7 +285,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(678, 292);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             64,
             0,
@@ -308,7 +309,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(678, 365);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             64,
             0,
@@ -333,7 +334,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(572, 665);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(122, 29);
             this.checkBox1.TabIndex = 25;
@@ -374,8 +375,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1890, 1271);
             this.MinimumSize = new System.Drawing.Size(1890, 1271);
             this.Name = "AsciifyForm";
