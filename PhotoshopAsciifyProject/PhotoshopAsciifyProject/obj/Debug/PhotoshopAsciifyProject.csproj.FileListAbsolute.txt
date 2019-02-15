@@ -1,0 +1,10 @@
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.exe.config
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.exe
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.pdb
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.Properties.Resources.resources
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csproj.GenerateResource.Cache
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csproj.CoreCompileInputs.cache
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.exe
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.pdb
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.AsciifyForm.resources
+c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csprojResolveAssemblyReference.cache
