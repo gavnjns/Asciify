@@ -8,3 +8,13 @@ c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj
 c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.pdb
 c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.AsciifyForm.resources
 c:\users\cca001\source\repos\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csprojResolveAssemblyReference.cache
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.exe.config
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.exe
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\bin\Debug\PhotoshopAsciifyProject.pdb
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csprojResolveAssemblyReference.cache
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.AsciifyForm.resources
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.Properties.Resources.resources
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csproj.GenerateResource.Cache
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.csproj.CoreCompileInputs.cache
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.exe
+C:\Users\CCA001\source\repos\Asciify\PhotoshopAsciifyProject\PhotoshopAsciifyProject\obj\Debug\PhotoshopAsciifyProject.pdb

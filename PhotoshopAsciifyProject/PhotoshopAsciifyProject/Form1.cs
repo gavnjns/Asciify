@@ -118,16 +118,27 @@ namespace PhotoshopAsciifyProject
         {
             if(checkBox1.Checked == true)
             {
+                timer1.Start();
 
-                t = new System.Threading.Thread(DoThisAllTheTime);
-                t.Start();
             }
             else
             {
-                t.Suspend();
+                timer1.Stop();
             }
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            BitmapAscii Asciify = new BitmapAscii();
+            Asciify.one = textOne.Text;
+            Asciify.two = textTwo.Text;
+            Asciify.three = textThree.Text;
+            Asciify.four = textFour.Text;
+            Asciify.five = textFive.Text;
+            Asciify.six = textSix.Text;
+            Bitmap Bitmp = new Bitmap(pictureBox1.Image);
+            richTextBox1.Text = Asciify.Ascitize(Bitmp, (int)numericUpDown1.Value, (int)numericUpDown2.Value);
+        }
     }
 }
