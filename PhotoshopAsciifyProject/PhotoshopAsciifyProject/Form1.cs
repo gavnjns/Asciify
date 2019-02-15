@@ -13,8 +13,6 @@ namespace PhotoshopAsciifyProject
 
     public partial class AsciifyForm : Form
     {
-        System.Threading.Thread t;
-        System.Threading.Thread g;
         public Form AsciifyFor = new Form();
         public AsciifyForm()
         {
@@ -27,8 +25,6 @@ namespace PhotoshopAsciifyProject
             openFileDialog1.Title = "Please pick your image";
             openFileDialog1.ShowDialog();
 
-            g = new System.Threading.Thread(Loadgif);
-            g.Start();
             Bitmap colorPic = new Bitmap(openFileDialog1.FileName);
             pictureBox1.Image = colorPic;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -51,19 +47,6 @@ namespace PhotoshopAsciifyProject
             pictureBox3.Height = (int)numericUpDown1.Value * 4;
             pictureBox3.Width = (int)numericUpDown2.Value * 4;
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-        public void Loadgif()
-        {
-
-                MethodInvoker mi = delegate ()
-                {
-                    Bitmap colorPic = new Bitmap(openFileDialog1.FileName);
-                    pictureBox1.Image = colorPic;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    Bitmap BmpImage = new Bitmap(pictureBox1.Image);
-                };
-                this.Invoke(mi);
-            
         }
 
         private void ValueChange1(object sender, EventArgs e)
@@ -93,26 +76,6 @@ namespace PhotoshopAsciifyProject
             richTextBox1.Text = Asciify.Ascitize(Bitmp, (int)numericUpDown1.Value, (int)numericUpDown2.Value);           
         }
 
-        public void DoThisAllTheTime()
-        {
-
-            while (checkBox1.Checked == true)
-            {
-                MethodInvoker mi = delegate ()
-                {
-                    BitmapAscii Asciify = new BitmapAscii();
-                    Asciify.one = textOne.Text;
-                    Asciify.two = textTwo.Text;
-                    Asciify.three = textThree.Text;
-                    Asciify.four = textFour.Text;
-                    Asciify.five = textFive.Text;
-                    Asciify.six = textSix.Text;
-                    Bitmap Bitmp = new Bitmap(pictureBox1.Image);
-                    richTextBox1.Text = Asciify.Ascitize(Bitmp, (int)numericUpDown1.Value, (int)numericUpDown2.Value);
-                };
-                this.Invoke(mi);
-            } 
-        }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {

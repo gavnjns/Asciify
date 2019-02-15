@@ -23,7 +23,7 @@ namespace PhotoshopAsciifyProject
         {
            List<Color> kernel = new List<Color>();
             Color col_pixel = new Color();
-           string AsciiString = "";
+            StringBuilder AsciiString = new StringBuilder();
            int Widthlocation = 0;
            int Heightlocation = 0;
             for (int totH = 0; totH < BmpImage.Height; totH += Href)
@@ -56,16 +56,15 @@ namespace PhotoshopAsciifyProject
 
                         }
                     }
-                    AsciiString = AsciiString + GrayToString(AverageColor(kernel), one, two, three, four, five, six);
+                    AsciiString.Append(GrayToString(AverageColor(kernel), one, two, three, four, five, six));
                     kernel.Clear();
                     Widthlocation += Wref;
                 }
                 Heightlocation += Href;
                 Widthlocation = 0;
-                AsciiString = AsciiString + "\n";
+                AsciiString.Append("\n");
             }
-       
-           return AsciiString;
+            return AsciiString.ToString();
        }
         public double AveragePixel(int R, int G, int B)
         {
